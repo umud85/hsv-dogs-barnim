@@ -19,6 +19,7 @@ import ImageListItem from '@mui/material/ImageListItem';
 import Image from 'next/image';
 import logo from '@/public/images/logo-transparent2.png';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
+import Link from 'next/link';
 
 interface Props {
   /**
@@ -28,6 +29,11 @@ interface Props {
   window?: () => Window;
 }
 
+interface NavItem {
+  name: string;
+  link: string;
+}
+
 const darkTheme = createTheme({
   palette: {
     mode: 'dark',
@@ -35,8 +41,17 @@ const darkTheme = createTheme({
 });
 
 const drawerWidth = 240;
-const navItems = ['Home', 'Verein', 'Hundesport', 'Veranstaltungen',
+const navItems2 = ['Home', 'Verein', 'Hundesport', 'Veranstaltungen',
   'Gallerie', 'Kontakt'];
+
+const navItems: NavItem[] = [
+  { name: 'Home', link: '/' },
+  { name: 'Verein', link: '/verein' },
+  { name: 'Hundesport', link: '/hundesport' },
+  { name: 'Veranstaltungen', link: '/veranstaltungen' },
+  { name: 'Gallerie', link: '/gallerie' },
+  { name: 'Kontakt', link: '/kontakt' },
+]
 
 export default function DrawerAppBar(props: Props) {
   const { window } = props;
@@ -54,9 +69,11 @@ export default function DrawerAppBar(props: Props) {
       <Divider />
       <List>
         {navItems.map((item) => (
-          <ListItem key={item} disablePadding>
+          <ListItem key={item.name} disablePadding>
             <ListItemButton sx={{ textAlign: 'center' }}>
-              <ListItemText primary={item} />
+              <Link href={item.link}>
+                <ListItemText primary={item.name} />
+              </Link>
             </ListItemButton>
           </ListItem>
         ))}
@@ -104,8 +121,10 @@ export default function DrawerAppBar(props: Props) {
             </Typography>
             <Box sx={{ display: { xs: 'none', md: 'block'}}}>
               {navItems.map((item) => (
-                <Button key={item} sx={{ color: '#fff' }}>
-                  {item}
+                <Button key={item.name} sx={{ color: '#fff' }}>
+                  <Link href={item.link}>
+                    {item.name}
+                  </Link>
                 </Button>
               ))}
             </Box>

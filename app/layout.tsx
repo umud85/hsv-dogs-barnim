@@ -1,6 +1,7 @@
 import './globals.css';
 import { Inter } from 'next/font/google';
-import Menu from "@/app/components/Menu";
+import Menu from '@/app/components/Menu';
+import StickyFooter from '@/app/components/StickyFooter';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,6 +20,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <Menu />
         {children}
+        <StickyFooter />
       </body>
     </html>
   )
