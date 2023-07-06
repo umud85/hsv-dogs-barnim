@@ -1,8 +1,9 @@
-import Image from 'next/image';
-import Hero from '@/app/components/Hero';
+"use client";
+
+import Homepage from '@/app/components/Homepage';
 
 export default function Home() {
   return (
-    <Hero />
+    <Homepage />
   )
 }
