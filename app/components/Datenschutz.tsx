@@ -6,7 +6,7 @@ import Container from "@mui/material/Container";
 
 export default function Datenschutz() { 
   return (
-    <Box className="mt-20">
+    <Box>
       <Typography className="text-center" variant="h4" component="h1" gutterBottom>
         Datenschutz
       </Typography>
