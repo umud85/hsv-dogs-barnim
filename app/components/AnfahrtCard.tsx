@@ -7,7 +7,6 @@ export default function AnfahrtCard() {
   return (
     <Card sx={{
       width: 200,
-      marginTop: "2rem"
     }}>
       <CardContent>
         <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>

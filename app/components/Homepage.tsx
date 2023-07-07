@@ -9,12 +9,17 @@ export default function Homepage() {
   return (
     <Box sx={{
       display: 'flex',
+      flexDirection: {xs: "column", lg: "row"},
       alignItems: 'center',
       justifyContent: 'center',
-      gap: '1rem',
+      gap: { xs: "2rem", lg: "1rem" },
     }}>
       <Hero />
-      <Box sx={{ display: { xs: "none", lg: "inline-block" }, }}>
+      <Box sx={{
+        display: "flex",
+        flexDirection: { xs: "row", lg: "column" },
+        gap: '1rem',
+      }}>
         <TrainingCard />
         <AnfahrtCard />
       </Box>
