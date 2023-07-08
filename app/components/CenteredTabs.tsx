@@ -42,15 +42,15 @@ function a11yProps(index: number) {
 }
 
 
-interface ScrollableTabsProps { 
+interface CenteredTabsProps { 
   titles: string[];
   children?: React.ReactNode[];
 }
 
-export default function ScrollableTabs({
+export default function CenteredTabs({
   titles, 
   children
-}: ScrollableTabsProps) {
+}: CenteredTabsProps) {
   const [value, setValue] = React.useState(0);
   const matches = useMediaQuery('(min-width: 515px)');
 
@@ -68,9 +68,7 @@ export default function ScrollableTabs({
         <Tabs
           value={value}
           onChange={handleChange}
-          orientation={matches ? "horizontal" : "vertical"}
           centered
-
         >
           {titles.map((title, index) => (
             <Tab label={title} key={index} />
