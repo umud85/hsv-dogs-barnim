@@ -17,9 +17,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${inter.className} h-screen`}>
         <Menu />
-        <main className='mt-20'>
+        <main className='mt-20 h-full'>
           {children}
         </main>
         <StickyFooter />

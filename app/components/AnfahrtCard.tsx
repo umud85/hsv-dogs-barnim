@@ -2,6 +2,7 @@ import * as React from 'react';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
 
 export default function AnfahrtCard() {
   return (
@@ -10,7 +11,8 @@ export default function AnfahrtCard() {
     }}>
       <CardContent>
         <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-          Anfahrt
+          <LocationOnIcon className='mr-1' />
+          Ort
         </Typography>
         <Typography variant="h5" component="div">
         </Typography>

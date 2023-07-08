@@ -2,6 +2,7 @@ import * as React from 'react';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
+import DateRangeIcon from '@mui/icons-material/DateRange';
 
 export default function KontaktCard() {
   return (
@@ -10,6 +11,7 @@ export default function KontaktCard() {
     }}>
       <CardContent>
         <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
+        <DateRangeIcon className='mr-1' />
           Trainingszeiten
         </Typography>
         <Typography variant="h5" component="div">

@@ -19,7 +19,7 @@ import ImageListItem from '@mui/material/ImageListItem';
 import Image from 'next/image';
 import logo from '@/public/images/logo-transparent2.png';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
-import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 
 interface Props {
   /**
@@ -54,6 +54,7 @@ const navItems: NavItem[] = [
 ]
 
 export default function DrawerAppBar(props: Props) {
+  const router = useRouter();
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
 
@@ -70,10 +71,11 @@ export default function DrawerAppBar(props: Props) {
       <List>
         {navItems.map((item) => (
           <ListItem key={item.name} disablePadding>
-            <ListItemButton sx={{ textAlign: 'center' }}>
-              <Link href={item.link}>
-                <ListItemText primary={item.name} />
-              </Link>
+            <ListItemButton
+              sx={{ textAlign: 'center' }}
+              onClick={() => router.push(item.link)}
+            >
+              <ListItemText primary={item.name} />
             </ListItemButton>
           </ListItem>
         ))}
@@ -121,10 +123,12 @@ export default function DrawerAppBar(props: Props) {
             </Typography>
             <Box sx={{ display: { xs: 'none', md: 'block'}}}>
               {navItems.map((item) => (
-                <Button key={item.name} sx={{ color: '#fff' }}>
-                  <Link href={item.link}>
-                    {item.name}
-                  </Link>
+                <Button
+                  key={item.name}
+                  sx={{ color: '#fff' }}
+                  onClick={() => router.push(item.link)}
+                >
+                  {item.name}
                 </Button>
               ))}
             </Box>
