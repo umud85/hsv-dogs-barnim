@@ -28,7 +28,7 @@ function CustomTabPanel(props: TabPanelProps) {
     >
       {value === index && (
         <Box sx={{ p: 3 }}>
-          <Typography>{children}</Typography>
+          {children}
         </Box>
       )}
     </div>
@@ -54,10 +54,6 @@ export default function ScrollableTabsButtonAuto({
 }: ScrollableTabsProps) {
   const [value, setValue] = React.useState(0);
   const matches = useMediaQuery('(min-width: 515px)');
-  
-  children?.map((child) => {
-    console.log(child);
-  })
 
   const handleChange = (event: React.SyntheticEvent, newValue: number) => {
     setValue(newValue);

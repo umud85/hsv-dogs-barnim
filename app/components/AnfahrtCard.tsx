@@ -14,19 +14,12 @@ export default function AnfahrtCard() {
           <LocationOnIcon className='mr-1' />
           Ort
         </Typography>
-        <Typography variant="h5" component="div">
-        </Typography>
-        <Typography sx={{ mb: 1 }} color="text.secondary">
-          VPG-Sport:
+
+        <Typography variant="body2">
+          Coppistr. 11-15 
         </Typography>
         <Typography variant="body2">
-          Di. u Do.: ab 18 Uhr
-        </Typography>
-        <Typography sx={{ mb: 1, mt: 1.5 }} color="text.secondary">
-          Breitensport:
-        </Typography>
-        <Typography variant="body2">
-          Mo. u Mi.: ab 19 Uhr
+          16225 Eberswalde
         </Typography>
       </CardContent>
     </Card>

@@ -19,7 +19,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.className} h-screen`}>
         <Menu />
-        <main className='mt-20 h-full'>
+        <main className='mt-20'>
           {children}
         </main>
         <StickyFooter />

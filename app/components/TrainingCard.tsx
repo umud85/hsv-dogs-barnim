@@ -14,8 +14,6 @@ export default function KontaktCard() {
         <DateRangeIcon className='mr-1' />
           Trainingszeiten
         </Typography>
-        <Typography variant="h5" component="div">
-        </Typography>
         <Typography sx={{ mb: 1 }} color="text.secondary">
           VPG-Sport:
         </Typography>
