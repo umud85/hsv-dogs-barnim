@@ -56,7 +56,7 @@ export default function StickyFooter() {
             <Typography variant="body2" color="text.secondary" sx={{
               marginLeft: 'auto',
             }}>
-              Impressum
+              <Link href="/impressum">Impressum</Link>
             </Typography>
             <Typography variant="body2" color="text.secondary">
               <Link href="/datenschutz">Datenschutz</Link>
