@@ -49,7 +49,7 @@ const navItems: NavItem[] = [
   { name: 'Verein', link: '/verein' },
   { name: 'Hundesport', link: '/hundesport' },
   { name: 'Veranstaltungen', link: '/veranstaltungen' },
-  { name: 'Gallerie', link: '/gallerie' },
+  { name: 'Galerie', link: '/galerie' },
   { name: 'Kontakt', link: '/kontakt' },
 ]
 
