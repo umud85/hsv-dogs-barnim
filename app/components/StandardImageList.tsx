@@ -11,8 +11,9 @@ export default function StandardImageList() {
     <Container maxWidth="md">
       <Typography
         gutterBottom
-        variant="h3"
-        sx={{ marginTop: "2em", textAlign: "center" }}
+        variant="h4"
+        component="h1"
+        sx={{ marginTop: "3em", textAlign: "center" }}
       >
         Galerie
       </Typography>

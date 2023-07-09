@@ -8,6 +8,7 @@ export default function Hero() {
   return (
     <Box sx={{
       display: { xs: "block", xl: "inline-block" },
+      marginTop: "3em"
     }}>
       <Box component="div">
         <div className="hero-img"></div>

@@ -1,8 +1,8 @@
-import React from 'react'
+import Kontakt from '@/app/components/Kontakt';
 
 function KontaktPage() {
   return (
-    <div>KontaktPage</div>
+    <Kontakt />
   )
 }
 

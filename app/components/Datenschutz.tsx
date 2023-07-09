@@ -7,7 +7,12 @@ import Container from "@mui/material/Container";
 export default function Datenschutz() { 
   return (
     <Box>
-      <Typography className="text-center" variant="h4" component="h1" gutterBottom>
+      <Typography
+        sx={{ textAlign: "center", marginTop: "3em" }}
+        variant="h4"
+        component="h1"
+        gutterBottom
+      >
         Datenschutz
       </Typography>
       <Container maxWidth="sm">

@@ -7,7 +7,11 @@ import Container from "@mui/material/Container";
 export default function Impressum() { 
   return (
     <Box>
-      <Typography className="text-center" variant="h4" component="h1" gutterBottom>
+      <Typography
+        sx={{ textAlign: "center", marginTop: "3em" }}
+        variant="h4"
+        component="h1"
+        gutterBottom>
         Impressum
       </Typography>
       <Container maxWidth="sm">
