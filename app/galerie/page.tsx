@@ -1,8 +1,8 @@
 import StandardImageList from '@/app/components/StandardImageList';
 
 function GaleriePage() {
-  return (
-    <StandardImageList />
+  return (<></>
+    // <StandardImageList />
   )
 }
 

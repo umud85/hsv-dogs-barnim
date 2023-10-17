@@ -12,10 +12,10 @@ function Vorstand() {
       flexWrap: "wrap",
       gap: "1em"
     }}>
+      {/* <VorstandCard name="Peter" imgUrl={imgUrl} />
       <VorstandCard name="Peter" imgUrl={imgUrl} />
       <VorstandCard name="Peter" imgUrl={imgUrl} />
-      <VorstandCard name="Peter" imgUrl={imgUrl} />
-      <VorstandCard name="Peter" imgUrl={imgUrl} />
+      <VorstandCard name="Peter" imgUrl={imgUrl} /> */}
     </Box>
   )
 }

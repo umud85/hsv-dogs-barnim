@@ -12,10 +12,10 @@ function Mitglieder() {
       flexWrap: "wrap",
       gap: "1em"
     }}>
-      <MitgliederCard name="Peter" imgUrl={imgUrl} />
+      {/* <MitgliederCard name="Peter" imgUrl={imgUrl} />
       <MitgliederCard name="Johnny" imgUrl={imgUrl} />
       <MitgliederCard name="Jimmy" imgUrl={imgUrl} />
-      <MitgliederCard name="Jenny" imgUrl={imgUrl} />
+      <MitgliederCard name="Jenny" imgUrl={imgUrl} /> */}
     </Box>
   )
 }

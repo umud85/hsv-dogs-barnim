@@ -28,8 +28,7 @@ body {
 
 .hero-img {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-  url("../public/images/logo-transparent2.png"), 
-  url("../public/images/hero-oscar.png");
+  url("../public/images/logo-transparent2.png");
   background-repeat: no-repeat;
   background-position: top, center, top;
   background-size: auto, contain, cover;

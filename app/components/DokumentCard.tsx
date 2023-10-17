@@ -16,14 +16,14 @@ export default function AnfahrtCard() {
           Dokumente
         </Typography>
 
-        <Typography variant="body2">
+        {/* <Typography variant="body2">
           <PictureAsPdfIcon className='mr-1' />
           Platzhalter 1 
         </Typography>
         <Typography variant="body2">
           <PictureAsPdfIcon className='mr-1' />
           Platzhalter 2
-        </Typography>
+        </Typography> */}
       </CardContent>
     </Card>
   );

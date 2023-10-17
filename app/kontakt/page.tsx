@@ -1,8 +1,8 @@
 import Kontakt from '@/app/components/Kontakt';
 
 function KontaktPage() {
-  return (
-    <Kontakt />
+  return (<></>
+    // <Kontakt />
   )
 }
 
